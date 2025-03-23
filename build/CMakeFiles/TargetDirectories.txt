@@ -1,0 +1,5 @@
+/Users/zoowayss/Documents/workspace/zoowayss/code/bmw330/jvm/build/CMakeFiles/edit_cache.dir
+/Users/zoowayss/Documents/workspace/zoowayss/code/bmw330/jvm/build/CMakeFiles/rebuild_cache.dir
+/Users/zoowayss/Documents/workspace/zoowayss/code/bmw330/jvm/build/src/CMakeFiles/mini_jvm.dir
+/Users/zoowayss/Documents/workspace/zoowayss/code/bmw330/jvm/build/src/CMakeFiles/edit_cache.dir
+/Users/zoowayss/Documents/workspace/zoowayss/code/bmw330/jvm/build/src/CMakeFiles/rebuild_cache.dir
