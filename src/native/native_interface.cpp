@@ -30,6 +30,13 @@ JavaValue NativeInterface::callNativeMethod(const std::string& className,
     return it->second(args);
 }
 
+bool NativeInterface::hasNativeMethod(const std::string& className,
+                                    const std::string& methodName,
+                                    const std::string& descriptor) {
+    std::string key = getMethodKey(className, methodName, descriptor);
+    return nativeMethods.find(key) != nativeMethods.end();
+}
+
 std::string NativeInterface::getMethodKey(const std::string& className,
                                         const std::string& methodName,
                                         const std::string& descriptor) {

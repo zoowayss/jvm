@@ -5,6 +5,7 @@
 #include <string>
 #include <functional>
 #include <unordered_map>
+#include <memory>
 
 namespace mini_jvm {
 
@@ -27,8 +28,17 @@ public:
                               const std::string& descriptor,
                               const std::vector<JavaValue>& args);
     
+    // 检查方法是否存在
+    bool hasNativeMethod(const std::string& className,
+                        const std::string& methodName,
+                        const std::string& descriptor);
+    
 private:
     NativeInterface() = default;
+    
+    // 禁用拷贝构造函数和赋值操作符
+    NativeInterface(const NativeInterface&) = delete;
+    NativeInterface& operator=(const NativeInterface&) = delete;
     
     // 本地方法注册表
     std::unordered_map<std::string, NativeMethod> nativeMethods;
